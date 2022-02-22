@@ -1,0 +1,13 @@
+package main
+import "fmt"
+
+func main() {
+  var s string = "Hello, World"
+  fmt.Printf(s)
+
+for index, char := range(s) {
+fmt.Printf("\n%d-%c ", index, char)
+}
+
+}
+

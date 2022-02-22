@@ -1,0 +1,23 @@
+package main
+import (
+	"fmt"
+)
+
+type Person struct {
+	name   string
+	age    int
+}
+
+
+func main() {
+	
+	person1 := new(Person)
+	person1.name = "Susinthiran .S"
+	person1.age = 45
+
+	//	 var person2 *Person = person1
+	 person2 := person1
+	
+	fmt.Println(person1)
+	fmt.Println("Now using pointers:\n", (*person2).name)
+}
